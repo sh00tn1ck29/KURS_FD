@@ -1,1 +1,10 @@
+div{
+  display: inline-flex'
+}
+span{
+  display: block;
+  background-color: yellow;
+  width: 200px;
+  height: 100px;
+}
 
