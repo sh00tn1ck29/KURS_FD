@@ -34,4 +34,5 @@
   border-right: 50px solid transparent;
   border-top: 50px solid brown;
   background-color: transparent;
+  box-sizing: content-box;
 }
