@@ -1,34 +1,31 @@
-/* Задание 1: Отступ снизу 16px для всех li */
-li {
-  padding-bottom: 16px;
+/* 1. First section: background and text color for the li items */
+.already-learned ol li {
+  background-color: green;
+  color: white;
 }
 
-/* Задание 2: Черная граница для ссылок с target="_blank" */
-a[target="_blank"] {
-  border: 2px solid black;
-}
-
-/* Задание 3: Красная граница для ссылок, у которых href начинается с "broken" */
-a[href^="broken"] {
-  border: 2px solid red;
-}
-
-/* Задание 4: Отступ слева 50px для ссылок на коммерческие сайты (.com) */
-a[href$=".com"] {
-  margin-left: 50px;
-}
-
-/* Задание 5: Шрифт 18px для ссылок, у которых lang содержит "en" */
-a[lang*="en"] {
-  font-size: 18px;
-}
-
-/* Задание 6: Зеленый цвет для ссылок, содержащих www в адресе */
-a[href*="www"] {
+/* 2. Second section: background and text color for the li items */
+.to-be-learned ol li {
+  background-color: orange;
   color: green;
 }
 
-/* Задание 7: Шрифт 24px для ссылок с title, содержащим "popular" */
-a[title*="popular"] {
+/* 3. Orange background for all <code> tags in the first section */
+.already-learned code {
+  background-color: orange;
+}
+
+/* 4. Green background for all <code> tags in the second section */
+.to-be-learned code {
+  background-color: green;
+}
+
+/* 5. Blue border for <code> in <h4> of the <li> following #special1 */
+#special1 ~ li h4 code {
+  border: 2px solid blue;
+}
+
+/* 6. Font size 24px for all <li> items after #special2 */
+#special2 ~ li {
   font-size: 24px;
 }
