@@ -1,25 +1,31 @@
-.already-learned ol {
+/* 1. Первый section: задаем фон и цвет ШРИФТА элементам li нумерованного списка */
+.already-learned ol li {
   background-color: green;
   color: white;
 }
 
-.to-be-learned ol {
+/* 2. Второй section: оранжевый фон и зеленый шрифт для элементов li */
+.to-be-learned ol li {
   background-color: orange;
   color: green;
 }
 
+/* 3. Оранжевый фон для всех тегов code в первой секции */
 .already-learned code {
   background-color: orange;
 }
 
+/* 4. Зеленый фон для всех тегов code во второй секции */
 .to-be-learned code {
   background-color: green;
 }
 
-#special1 ~ h4 > code {
+/* 5. Синяя рамка для code в h4, находящихся в li ПОСЛЕ элемента #special1 */
+#special1 ~ li h4 code {
   border: 2px solid blue;
 }
 
+/* 6. Шрифт 24px для всех li ПОСЛЕ элемента #special2 */
 #special2 ~ li {
   font-size: 24px;
 }
