@@ -1,9 +1,9 @@
-.already-learned ol {
+.already-learned ol li {
   background-color: green;
   color: white;
 }
 
-.to-be-learned ol {
+.to-be-learned ol li {
   background-color: orange;
   color: green;
 }
@@ -23,4 +23,3 @@
 #special2 ~ li {
   font-size: 24px;
 }
-
