@@ -2,28 +2,32 @@ li {
   padding-bottom: 16px;
 }
 
-/* Пункт 2: Добавил тот самый пробел перед точкой с запятой */
+/* Задание 2: Добавляем пробел перед точкой с запятой, как в условии */
 a[target="_blank"] {
   border: 2px solid black ;
 }
 
+/* Задание 3 */
 a[href^="broken"] {
   border: 2px solid red;
 }
 
+/* Задание 4 */
 a[href$=".com"] {
   margin-left: 50px;
 }
 
+/* Задание 5 */
 [lang*="en"] {
   font-size: 10px;
 }
 
+/* Задание 6 */
 a[href*="www"] {
   color: green;
 }
 
-/* Пункт 7: Убираем 'a' и используем *= */
+/* Задание 7: Содержит popular (поймает и super-popular) */
 [title*="popular"] {
   font-size: 24px;
 }
