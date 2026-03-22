@@ -9,22 +9,22 @@ a[target="_blank"] {
 }
 
 
-a[href*='broken'] {
+a[href*="broken"] {
   border: 2px solid red;
 }
 
-a[href$='.com'] {
+a[href$=".com"] {
   margin-left: 50px;
 }
 
-[lang*='en'] {
+[lang*="en"] {
   font-size: 10px;
 }
 
-a[href*='www'] {
+a[href*="www"] {
   color: green;
 }
 
-[title~='popular'] {
+[title~="popular"] {
   font-size: 24px;
 }
