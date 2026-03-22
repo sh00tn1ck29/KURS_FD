@@ -1,31 +1,25 @@
-/* 1. First section: background and text color for the li items */
-.already-learned ol li {
+.already-learned ol {
   background-color: green;
   color: white;
 }
 
-/* 2. Second section: background and text color for the li items */
-.to-be-learned ol li {
+.to-be-learned ol {
   background-color: orange;
   color: green;
 }
 
-/* 3. Orange background for all <code> tags in the first section */
 .already-learned code {
   background-color: orange;
 }
 
-/* 4. Green background for all <code> tags in the second section */
 .to-be-learned code {
   background-color: green;
 }
 
-/* 5. Blue border for <code> in <h4> of the <li> following #special1 */
 #special1 ~ li h4 code {
   border: 2px solid blue;
 }
 
-/* 6. Font size 24px for all <li> items after #special2 */
 #special2 ~ li {
   font-size: 24px;
 }
