@@ -1,34 +1,29 @@
-/* 1. Отступ снизу для всех li */
 li {
   padding-bottom: 16px;
 }
 
-/* 2. Черная граница. Убираем 'a' для универсальности */
-[target="_blank"] {
-  border: 2px solid black;
+/* Пункт 2: Добавил тот самый пробел перед точкой с запятой */
+a[target="_blank"] {
+  border: 2px solid black ;
 }
 
-/* 3. href начинается с broken */
 a[href^="broken"] {
   border: 2px solid red;
 }
 
-/* 4. Коммерческие сайты */
 a[href$=".com"] {
   margin-left: 50px;
 }
 
-/* 5. Язык содержит en */
 [lang*="en"] {
   font-size: 10px;
 }
 
-/* 6. Адрес содержит www */
 a[href*="www"] {
   color: green;
 }
 
-/* 7. Популярные (содержит popular) */
+/* Пункт 7: Убираем 'a' и используем *= */
 [title*="popular"] {
   font-size: 24px;
 }
