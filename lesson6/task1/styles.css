@@ -19,7 +19,7 @@ a[href$=".com"] {
 }
 
 /* Задание 5: Шрифт 10px для ссылок с lang, содержащим "en" */
-a[lang|="en"] {
+a[lang*="en"] {
   font-size: 10px;
 }
 
@@ -29,6 +29,6 @@ a[href*="www"] {
 }
 
 /* Задание 7: Шрифт 24px для ссылок с title, содержащим "popular" */
-[title~="popular"], [title*="popular"] {
+a[title*="popular"] {
   font-size: 24px;
 }
