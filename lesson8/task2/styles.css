@@ -1,0 +1,11 @@
+.box {
+  background-color: bisque;
+  border-bottom: 10px dashed burlywood;
+  border-left: 20px dashed aqua;
+  border-right: 20px solid chartreuse;
+  border-top: 10px solid firebrick;
+  margin: 50px 100px;
+  padding: 20px;
+  width: 420px;
+  height: 140px;
+}
