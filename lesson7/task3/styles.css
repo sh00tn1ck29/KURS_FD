@@ -13,12 +13,14 @@
   background-color: red;
 }
 
-a::after {
+
+a::before {
   content: '>';
   color: green;
 }
 
-a::before {
+
+a::after {
   content: '<';
   color: green;
 }
