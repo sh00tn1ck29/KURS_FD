@@ -1,1 +1,22 @@
+li {
+  margin-bottom: 16px;
+}
+
+ul:first-child > span {
+  color: white;
+  background-color: red;
+}
+
+ul:last-child > span {
+  color: white;
+  background-color: black;
+}
+
+ul:nth-child(2n) > span {
+  margin-left: 16px;
+}
+
+.paragraphs:nth-child(2n + 1) p {
+  background-color: grey;
+}
 
