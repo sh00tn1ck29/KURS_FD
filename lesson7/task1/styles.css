@@ -1,6 +1,6 @@
 .anchor:link {
   color: white;
-  background-color: orange;
+  background-color: black;
 }
 
 .anchor:visited {
@@ -17,11 +17,11 @@
   font-size: 24px;
 }
 
-button[disabled] {
+.some-button:disabled {
   border: 2px dashed grey;
 }
 
-button:hover {
+.some-button:not(:disabled):hover {
   color: white;
   background-color: grey;
 }
@@ -30,7 +30,6 @@ input:focus {
   background-color: orange;
 }
 
-.confirm-checkbox {
+input:checked {
   margin-left: 20px;
 }
-
