@@ -18,21 +18,22 @@
 
 /* 3. Круг */
 .box3 {
-  width: 100px;  /* В условии d=100px, у тебя было 50 */
+  width: 100px; /* В условии d=100px, у тебя было 50 */
   height: 100px;
   background-color: aquamarine;
   border-radius: 50%;
   margin: 50px;
 }
 
-/* 4. Треугольник (рисуется через границы) */
 .box4 {
-  width: 0;      /* У треугольника на границах ширина самого блока 0 */
+  width: 0;
   height: 0;
   margin: 50px;
-  /* Основание 100px (по 50px слева и справа), высота 50px */
+  background-color: transparent; /* Убедись, что нет фонового цвета */
+
+  /* Рисуем треугольник */
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-top: 50px solid brown; /* Цвет brown, направление вниз */
-  background-color: transparent; /* Убираем фон Bisque */
+  border-top: 50px solid brown; /* Основание 100px, высота 50px */
+  border-bottom: 0 solid transparent; /* Явно указываем отсутствие нижней границы */
 }
