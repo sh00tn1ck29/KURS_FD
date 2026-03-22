@@ -19,7 +19,7 @@ a[href$=".com"] {
 }
 
 /* Задание 5: Шрифт 10px для ссылок с lang, содержащим "en" */
-a[lang*="en"] {
+a[lang|="en"] {
   font-size: 10px;
 }
 
