@@ -18,18 +18,25 @@
   border-radius: 50%;
 }
 
+/* 3. Круг (Test #3) */
 .box3 {
   margin: 50px;
   background-color: aquamarine;
-  width: 50px;
-  height: 50px;
+  width: 100px; /* В условии d=100px */
+  height: 100px;
   border-radius: 50%;
 }
 
+/* 4. Треугольник (Test #4) */
 .box4 {
-  width: 50px;
-  height: 50px;
+  width: 0; /* ОБЯЗАТЕЛЬНО 0, чтобы не было квадрата внутри */
+  height: 0; /* ОБЯЗАТЕЛЬНО 0 */
   margin: 50px;
-  border: 25px solid rgb(255, 255, 255);
-  border-top-color: brown;
+  background-color: transparent; /* Убираем фон */
+
+  /* Основание 100px = border-left(50px) + border-right(50px) */
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  /* Высота 50px */
+  border-top: 50px solid brown;
 }
