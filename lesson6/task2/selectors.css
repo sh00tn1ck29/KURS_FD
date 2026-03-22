@@ -2,14 +2,12 @@ li {
   margin-bottom: 16px;
 }
 
-ol,
-li {
+ol li {
   background-color: green;
   color: white;
 }
 
-ul,
-li {
+ul li {
   background-color: orange;
   color: white;
 }
