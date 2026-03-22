@@ -1,32 +1,25 @@
-/* 1. Первый section: красим сами li и вложенные элементы, чтобы не было дырок */
-.already-learned ol li {
+.already-learned ol {
   background-color: green;
   color: white;
 }
 
-/* 2. Второй section: оранжевый фон, зеленый текст */
-.to-be-learned ol li {
+.to-be-learned ol {
   background-color: orange;
   color: green;
 }
 
-/* 3. Оранжевый фон для code в ПЕРВОЙ секции */
 .already-learned code {
   background-color: orange;
-  color: inherit; /* Чтобы текст внутри code не стал белым раньше времени */
 }
 
-/* 4. Зеленый фон для code во ВТОРОЙ секции */
 .to-be-learned code {
   background-color: green;
 }
 
-/* 5. Рамка для code в h4, который идет в li ПОСЛЕ #special1 */
-#special1 ~ li h4 code {
+#special1 ~ h4 > code {
   border: 2px solid blue;
 }
 
-/* 6. Шрифт 24px всем li после #special2 */
 #special2 ~ li {
   font-size: 24px;
 }
