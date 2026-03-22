@@ -1,25 +1,31 @@
+/* 1. Зеленый фон и белый шрифт первого списка */
 .already-learned ol li {
   background-color: green;
   color: white;
 }
 
+/* 2. Оранжевый фон и зеленый шрифт второго списка */
 .to-be-learned ol li {
   background-color: orange;
   color: green;
 }
 
+/* 3. Оранжевый фон для code в первой секции */
 .already-learned code {
   background-color: orange;
 }
 
+/* 4. Зеленый фон для code во второй секции */
 .to-be-learned code {
   background-color: green;
 }
 
-#special1 ~ h4 > code {
+/* 5. Синяя рамка для code в h4 после #special1 */
+#special1 ~ li h4 code {
   border: 2px solid blue;
 }
 
+/* 6. Шрифт 24px для элементов списка после #special2 */
 #special2 ~ li {
   font-size: 24px;
 }
