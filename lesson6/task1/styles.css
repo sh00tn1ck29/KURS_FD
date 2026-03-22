@@ -1,5 +1,5 @@
 li {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 a[target='_blank'] {
@@ -14,7 +14,7 @@ a[href$='.com'] {
   margin-left: 50px;
 }
 
-a[lang*='en'] {
+a[lang|='en'] {
   font-size: 10px;
 }
 
@@ -22,7 +22,6 @@ a[href*='www'] {
   color: green;
 }
 
-/* Задание 7: шрифт 24px для элементов, где popular — это отдельное слово */
-[title~="popular"] {
+a[title~='popular'] {
   font-size: 24px;
 }
