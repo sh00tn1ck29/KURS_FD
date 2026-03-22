@@ -2,26 +2,32 @@ li {
   padding-bottom: 16px;
 }
 
-a[target='_blank'] {
+/* Пункт 2: Используем двойные кавычки, как в HTML */
+a[target="_blank"] {
   border: 2px solid black;
 }
 
-a[href*='broken'] {
+/* Пункт 3: Здесь всё ок, но заменим на ^ (начинается с), как просят */
+a[href^="broken"] {
   border: 2px solid red;
 }
 
-a[href$='.com'] {
+/* Пункт 4 */
+a[href$=".com"] {
   margin-left: 50px;
 }
 
-[lang*='en'] {
+/* Пункт 5 */
+[lang*="en"] {
   font-size: 10px;
 }
 
-a[href*='www'] {
+/* Пункт 6 */
+a[href*="www"] {
   color: green;
 }
 
-[title*='popular'] {
+/* Пункт 7: Добавим 'a' перед селектором и двойные кавычки */
+a[title*="popular"] {
   font-size: 24px;
 }
