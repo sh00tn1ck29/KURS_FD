@@ -2,7 +2,7 @@ li {
   padding-bottom: 16px;
 }
 
-a[target='_blank'] {
+a[target="_blank"] {
   border: 2px solid black;
 }
 
@@ -22,6 +22,6 @@ a[href*='www'] {
   color: green;
 }
 
-[title~='popular'] {
+[title~="popular"] {
   font-size: 24px;
 }
