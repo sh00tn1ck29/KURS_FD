@@ -1,30 +1,34 @@
+/* 1. Отступ снизу для всех li */
 li {
   padding-bottom: 16px;
 }
 
-a[target="_blank"] {
+/* 2. Черная граница. Убираем 'a' для универсальности */
+[target="_blank"] {
   border: 2px solid black;
 }
 
+/* 3. href начинается с broken */
 a[href^="broken"] {
   border: 2px solid red;
 }
 
+/* 4. Коммерческие сайты */
 a[href$=".com"] {
   margin-left: 50px;
 }
 
-/* Задание 5: Убрали 'a', чтобы селектор был универсальным */
+/* 5. Язык содержит en */
 [lang*="en"] {
   font-size: 10px;
 }
 
+/* 6. Адрес содержит www */
 a[href*="www"] {
   color: green;
 }
 
-/* Задание 7: Если *= не проходит, попробуйте ~= (слово целиком) */
-/* Если в HTML есть только слова через пробел, это сработает */
-[title~="popular"] {
+/* 7. Популярные (содержит popular) */
+[title*="popular"] {
   font-size: 24px;
 }
