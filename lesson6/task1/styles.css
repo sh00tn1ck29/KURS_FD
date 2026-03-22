@@ -3,8 +3,8 @@ li {
   padding-bottom: 16px;
 }
 
-/* Задание 2: Черная граница для ссылок с target="_blank" */
-a[target="_blank"] {
+/* Задание 2: Черная граница для ссылок с target="blank" */
+a[target="blank"] {
   border: 2px solid black;
 }
 
@@ -13,12 +13,12 @@ a[href^="broken"] {
   border: 2px solid red;
 }
 
-/* Задание 4: Отступ слева 50px для ссылок на коммерческие сайты (.com) */
+/* Задание 4: Отступ слева 50px для ссылок на .com */
 a[href$=".com"] {
   margin-left: 50px;
 }
 
-/* Задание 5: Шрифт 18px для ссылок, у которых lang содержит "en" */
+/* Задание 5: Шрифт 18px для ссылок с lang, содержащим "en" */
 a[lang*="en"] {
   font-size: 18px;
 }
@@ -29,6 +29,6 @@ a[href*="www"] {
 }
 
 /* Задание 7: Шрифт 24px для ссылок с title, содержащим "popular" */
-a[title*="popular"] {
+a[title~="popular"] {
   font-size: 24px;
 }
