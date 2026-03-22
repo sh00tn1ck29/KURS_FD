@@ -3,7 +3,7 @@ li {
 }
 
 /* Пункт 2: Используем двойные кавычки, как в HTML */
-[target="_blank"] {
+a[target="_blank"] {
   border: 2px solid black;
 }
 
@@ -28,6 +28,6 @@ a[href*="www"] {
 }
 
 /* Пункт 7: Добавим 'a' перед селектором и двойные кавычки */
-[title*="popular"] {
+a[title*="popular"] {
   font-size: 24px;
 }
