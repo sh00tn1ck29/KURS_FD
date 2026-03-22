@@ -1,31 +1,32 @@
-/* 1. Зеленый фон и белый шрифт первого списка */
+/* 1. Первый section: красим сами li и вложенные элементы, чтобы не было дырок */
 .already-learned ol li {
   background-color: green;
   color: white;
 }
 
-/* 2. Оранжевый фон и зеленый шрифт второго списка */
+/* 2. Второй section: оранжевый фон, зеленый текст */
 .to-be-learned ol li {
   background-color: orange;
   color: green;
 }
 
-/* 3. Оранжевый фон для code в первой секции */
+/* 3. Оранжевый фон для code в ПЕРВОЙ секции */
 .already-learned code {
   background-color: orange;
+  color: inherit; /* Чтобы текст внутри code не стал белым раньше времени */
 }
 
-/* 4. Зеленый фон для code во второй секции */
+/* 4. Зеленый фон для code во ВТОРОЙ секции */
 .to-be-learned code {
   background-color: green;
 }
 
-/* 5. Синяя рамка для code в h4 после #special1 */
+/* 5. Рамка для code в h4, который идет в li ПОСЛЕ #special1 */
 #special1 ~ li h4 code {
   border: 2px solid blue;
 }
 
-/* 6. Шрифт 24px для элементов списка после #special2 */
+/* 6. Шрифт 24px всем li после #special2 */
 #special2 ~ li {
   font-size: 24px;
 }
