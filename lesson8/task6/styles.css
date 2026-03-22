@@ -1,36 +1,38 @@
-* {
-  box-sizing: border-box;
-}
-
+/* 1. Прямоугольник с закругленными углами */
 .box1 {
-  margin: 50px;
+  width: 100px;
+  height: 50px;
   background-color: forestgreen;
-  width: 100px;
-  height: 50px;
-  border-radius: 10px;
+  border-radius: 16px; /* В условии сказано 16px, а не 10px */
+  margin: 50px;
 }
 
+/* 2. Овал */
 .box2 {
-  margin: 50px;
-  background-color: darkmagenta;
   width: 100px;
   height: 50px;
-  border-radius: 50%;
+  background-color: darkmagenta;
+  border-radius: 50%; /* Для овала при таких сторонах — ок */
+  margin: 50px;
 }
 
+/* 3. Круг */
 .box3 {
-  margin: 50px;
+  width: 100px;  /* В условии d=100px, у тебя было 50 */
+  height: 100px;
   background-color: aquamarine;
-  width: 50px;
-  height: 50px;
   border-radius: 50%;
+  margin: 50px;
 }
 
+/* 4. Треугольник (рисуется через границы) */
 .box4 {
-  width: 50px;
-  height: 50px;
+  width: 0;      /* У треугольника на границах ширина самого блока 0 */
+  height: 0;
   margin: 50px;
-  background-color: bisque;
-  border: 25px solid rgb(255, 255, 255);
-  border-top-color: brown;
+  /* Основание 100px (по 50px слева и справа), высота 50px */
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid brown; /* Цвет brown, направление вниз */
+  background-color: transparent; /* Убираем фон Bisque */
 }
