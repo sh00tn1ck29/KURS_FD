@@ -2,7 +2,7 @@ li {
   padding-bottom: 16px;
 }
 
-a[target="_blank"] {
+[target="_blank"] {
   border: 2px solid black;
 }
 
