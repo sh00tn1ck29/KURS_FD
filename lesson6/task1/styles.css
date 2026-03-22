@@ -22,6 +22,7 @@ a[href*='www'] {
   color: green;
 }
 
-a[title*='popular'] {
+/* Задание 7: шрифт 24px для элементов, где popular — это отдельное слово */
+[title~="popular"] {
   font-size: 24px;
 }
