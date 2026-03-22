@@ -1,19 +1,19 @@
-.anchor:link {
+a:link {
   color: white;
   background-color: black;
 }
 
-.anchor:visited {
+a:visited {
   color: green;
   background-color: orange;
 }
 
-.anchor:active,
+a:active,
 .some-button:active {
   border: 3px solid red;
 }
 
-.anchor:hover {
+a:hover {
   font-size: 24px;
 }
 
