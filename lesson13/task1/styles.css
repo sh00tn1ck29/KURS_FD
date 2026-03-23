@@ -7,7 +7,7 @@
   height: 500px; /* Условие 2 */
   
   /* Используем URL из условия задачи */
-  background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson12/nature.jpg');
+  background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+13/task1/nature.jpeg');
   background-position: center; /* Условие 3 */
   background-size: cover; /* Условие 3: обрезаться по горизонтали и соответствовать высоте */
   background-repeat: no-repeat;
