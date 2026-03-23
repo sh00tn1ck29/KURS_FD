@@ -1,37 +1,34 @@
 body {
   margin: 0;
+  padding: 0;
 }
 
 .header {
   background-color: darkturquoise;
   height: 40px;
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  z-index: 100;
+  top: 0;
 }
 
 .navigation,
 .nav-list {
-  height: 40px;
-  margin: 0;
-  padding: 0;
   list-style: none;
-  display: flex;
+  height: 40px;
+  margin-top: 0;
+  color: white;
 }
 
 .nav-item {
-  color: white;
+  float: left;
   margin-left: 16px;
+  height: 40px;
   line-height: 40px;
 }
 
 .content {
   background-color: beige;
   height: 5000px;
-  padding-top: 40px;
-  position: relative;
 }
 
 .head {
@@ -48,14 +45,14 @@ body {
   height: 60px;
   background-color: brown;
   position: absolute;
-  top: -60px;
+  top: -30%;
 }
 
 .ear_left {
-  left: 0;
+  left: -20%;
 }
 .ear_right {
-  right: 0;
+  left: 100%;
 }
 
 .eye {
@@ -73,3 +70,4 @@ body {
 .eye_right {
   right: 40px;
 }
+
