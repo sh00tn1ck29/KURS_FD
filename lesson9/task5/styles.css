@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: darkturquoise;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navigation,
+.nav-list {
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  color: white;
+  margin-left: 16px;
+  line-height: 40px;
+}
+
+.content {
+  background-color: beige;
+  height: 5000px;
+  padding-top: 40px;
+  position: relative;
+}
+
+.head {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  position: absolute;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+}
+
+.ear {
+  width: 40px;
+  height: 60px;
+  background-color: brown;
+  position: absolute;
+  top: -60px;
+}
+
+.ear_left {
+  left: 0;
+}
+.ear_right {
+  right: 0;
+}
+
+.eye {
+  width: 30px;
+  height: 30px;
+  background-color: grey;
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+}
+
+.eye_left {
+  left: 40px;
+}
+.eye_right {
+  right: 40px;
+}
