@@ -2,7 +2,7 @@ html {
   font-family: Verdana;
 }
 
-header {
+h1 {
   font-size: 74px;
   text-align: center;
   white-space: nowrap;
@@ -17,6 +17,4 @@ div {
   color: white;
   text-align: center;
   line-height: 200px;
-  
 }
-
