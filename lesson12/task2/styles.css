@@ -1,24 +1,23 @@
 html {
-  font-family: Verdana; /* Условие 1 */
+  font-family: Verdana;
 }
 
 h1 {
-  font-size: 74px; /* Условие 2 */
-  width: 50%;     /* Условие 2: половина ширины страницы */
-  margin: 0 auto; /* Условие 2: центрирование блока */
-  text-align: center; /* Условие 2: центрирование текста */
+  font-size: 74px; 
+  width: 50%;     
+  margin: 0 auto; 
+  text-align: center; 
   
-  /* Условие 2: обрезка с троеточием */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 div {
-  height: 200px;         /* Условие 3 */
-  background-color: coral; /* Условие 3 */
-  color: white;          /* Условие 4 */
-  text-transform: uppercase; /* Условие 4: заглавные буквы */
-  text-align: center;    /* Условие 4: по горизонтали */
-  line-height: 200px;    /* Условие 5: высота строки */
+  height: 200px;         
+  background-color: coral;
+  color: white;          
+  text-transform: uppercase; 
+  text-align: center;    
+  line-height: 200px;   
 }
