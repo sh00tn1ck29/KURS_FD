@@ -1,7 +1,6 @@
-* {
+section {
   margin: 32px;
 }
-
 html {
   font-family: Roboto, sans-serif;
   font-size: 18px;
@@ -32,4 +31,3 @@ a {
 em {
   color: grey;
 }
-
