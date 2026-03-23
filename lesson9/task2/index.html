@@ -1,62 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
+    <title>Float</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <div class="container">
-      <h2><code>position: static;</code></h2>
+    <section class="container">
+      <h2>Big text</h2>
+      <div class="red square"></div>
+      <div class="green square"></div>
       <p>
-        По умолчанию все элементы имеют <code>position: static</code>. Это значение явно указывать
-        не обязательно. Такие элементы находятся в потоке и занимают определенное пространство в
-        документе. Свойства <code>top: ...; left: ...; righ: ...; bottom: ...;</code> никак не
-        влияют на такой элемент
+        The float CSS property places an element on the left or right side of its container,
+        allowing text and inline elements to wrap around it. The element is removed from the normal
+        flow of the page, though still remaining a part of the flow (in contrast to absolute
+        positioning). As mentioned above, when an element is floated, it is taken out of the normal
+        flow of the document (though still remaining part of it). It is shifted to the left, or
+        right, until it touches the edge of its containing box, or another floated element. In this
+        example, there are three colored squares. Two are floated left, and one is floated right.
+        Note that the second "left" square is placed to the right of the first. Additional squares
+        would continue to stack to the right, until they filled the containing box, after which they
+        would wrap to the next line.
       </p>
-      <div class="parent static-parent">
-        <code class="tip">p1 - position: static;</code>
-        <div class="child"><code class="tip">c1 - position: absolute;</code></div>
-      </div>
-      <h2><code>position: relative;</code></h2>
-      <p>
-        Элементы с <code>position: relative;</code> остаются в потоке и занимают определенное
-        пространство в документе. Могут изменять свое положение относительно первоначальной позиции
-        с помощью свойств <code>top: ...; left: ...; righ: ...; bottom: ...;</code> Их используют
-        для размещения маленьких объектов относительно других на странице.
-      </p>
-      <div class="parent relative-parent">
-        <code class="tip">p2 - position: relative; top: 20px; left: 50px;</code>
-        <div class="child"><code class="tip">c2 - position: absolute;</code></div>
-      </div>
-      <h2><code>position: absolute;</code></h2>
-      <p>
-        Элементы с <code>position: absolute</code> выпадают из потока и располагаются в заданной
-        позиции относительно ближайшего родителя с
-        <code>position: relative | absolute | fixed</code>. Если такого родителя нету, то элемент
-        позиционируется относительно <code>body</code>
-      </p>
-      <div class="parent absolute-parent">
-        <code class="tip">p3 - position: absolute; right: 20px; left: 50px;</code>
-        <div class="child"><code class="tip">c3 - position: absolute;</code></div>
-      </div>
-      <h2><code>position: fixed;</code></h2>
-      <p>
-        Элементы с <code>position: fixed;</code> выпадают из потока и фиксируют свое положение
-        относительно экрана (окна браузера). Управлять их положением можно с помощью свойств
-        <code>top: ...; left: ...; righ: ...; bottom: ...;</code>
-      </p>
-      <div class="parent fixed-parent">
-        <code class="tip">p4 - position: fixed; bottom: 20px; left: 30px;</code>
-        <div class="child"><code class="tip">c4 - position: absolute;</code></div>
-      </div>
-    </div>
+      <footer class="footer"></footer>
+    </section>
+    <section class="container">
+      <h2>Small text</h2>
+      <div class="red square"></div>
+      <div class="green square"></div>
+      <p>Small text</p>
+      <footer class="footer"></footer>
+    </section>
   </body>
 </html>
