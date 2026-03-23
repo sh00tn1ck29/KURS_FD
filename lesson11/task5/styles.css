@@ -1,1 +1,14 @@
+.gallery {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+
+.thumb {
+  margin: 8px;
+}
+
+.gallery:hover {
+  cursor: all-scroll;
+}
 
