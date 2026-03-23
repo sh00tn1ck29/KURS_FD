@@ -1,31 +1,49 @@
-/* Базовые стили для отображения (важно соблюсти размеры!) */
+div {
+  padding: 16px;
+}
+
+.child,
 .parent {
-  width: 300px;
-  height: 150px;
-  background-color: #a2d248; /* Зеленый */
-  border: 1px solid black;
-  margin-bottom: 50px;
-  position: relative; /* Чтобы .child позиционировался внутри родителя */
-  box-sizing: border-box;
+  border: 2px solid black;
 }
 
 .child {
-  width: 200px;
-  height: 40px;
-  background-color: #ffff00; /* Желтый */
-  border: 1px solid black;
   position: absolute;
-  bottom: 0; /* На образце желтый блок прижат к низу */
-  left: 0;
-  box-sizing: border-box;
+  top: 90px;
+  right: 40px;
 }
 
-/* Исключение для первого теста (p1 static) */
+.parent {
+  width: 300px;
+  height: 100px;
+  background-color: yellowgreen;
+}
+
+.child {
+  background: yellow;
+  position: absolute;
+}
+
+.tip {
+  opacity: 1;
+  background-color: whitesmoke;
+  padding: 0 8px;
+}
+
+.green {
+  width: 100px;
+  height: 100px;
+  background: green;
+  float: left;
+}
+
+.container {
+  height: 2000px;
+}
+
 .static-parent {
   position: static;
 }
-
-/* --- Стили из условий задания --- */
 
 .relative-parent {
   position: relative;
@@ -44,4 +62,5 @@
   bottom: 20px;
   left: 30px;
 }
+
 
