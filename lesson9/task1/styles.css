@@ -4,18 +4,17 @@
 
 .relative-parent {
   position: relative;
-  top: 20px;    /* Сместить на 20px вниз */
-  left: 50px;   /* Сместить на 50px вправо */
+  top: 20px;
+  left: 50px;
 }
 
 .absolute-parent {
   position: absolute;
-  bottom: 20px; /* Отступ снизу 20px */
-  right: 50px;  /* Отступ справа 50px */
+  bottom: 20px;
+  right: 50px;
 }
-
 .fixed-parent {
   position: fixed;
-  bottom: 20px; /* Отступ снизу 20px */
-  left: 30px;   /* Отступ слева 30px */
+  bottom: 20px;
+  left: 30px;
 }
