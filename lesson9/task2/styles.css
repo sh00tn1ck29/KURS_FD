@@ -14,6 +14,7 @@ section {
 footer {
   height: 30px;
   border: 2px solid black;
+  clear: right;
 }
 
 .container {
@@ -30,4 +31,3 @@ footer {
   background-color: red;
   float: right;
 }
-
