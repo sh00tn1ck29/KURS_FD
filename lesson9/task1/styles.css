@@ -1,28 +1,31 @@
-/* Базовые стили для прохождения визуального теста */
+/* Базовые стили для отображения (важно соблюсти размеры!) */
 .parent {
   width: 300px;
   height: 150px;
-  background-color: #a2d248;
+  background-color: #a2d248; /* Зеленый */
   border: 1px solid black;
-  margin-bottom: 40px;
-  padding: 10px;
-  box-sizing: border-box; /* Чтобы padding не раздувал блоки */
+  margin-bottom: 50px;
+  position: relative; /* Чтобы .child позиционировался внутри родителя */
+  box-sizing: border-box;
 }
 
 .child {
-  width: 150px;
+  width: 200px;
   height: 40px;
-  background-color: #ffff00;
+  background-color: #ffff00; /* Желтый */
   border: 1px solid black;
-  position: absolute; /* Обязательно для c1, c2, c3, c4 */
-  top: 10px;
-  left: 10px;
+  position: absolute;
+  bottom: 0; /* На образце желтый блок прижат к низу */
+  left: 0;
+  box-sizing: border-box;
 }
 
-/* Стили из условий задачи */
+/* Исключение для первого теста (p1 static) */
 .static-parent {
   position: static;
 }
+
+/* --- Стили из условий задания --- */
 
 .relative-parent {
   position: relative;
@@ -41,3 +44,4 @@
   bottom: 20px;
   left: 30px;
 }
+
