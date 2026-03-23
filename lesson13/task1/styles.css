@@ -1,17 +1,23 @@
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Условие 4.6 */
 }
 
 .mountains {
-  width: 300px;
-  height: 500px;
-  background-image: url(nature.jpeg);
-  background-position: center;
-  background-size: cover;
-  font-size: 32px;
-  font-weight: 700;
-  color: white;
-  padding-top: 32px;
-  text-align: center;
-}
+  width: 300px; /* Условие 2 */
+  height: 500px; /* Условие 2 */
+  
+  /* Используем URL из условия задачи */
+  background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson12/nature.jpg');
+  background-position: center; /* Условие 3 */
+  background-size: cover; /* Условие 3: обрезаться по горизонтали и соответствовать высоте */
+  background-repeat: no-repeat;
 
+  font-size: 32px; /* Условие 4.1 */
+  font-weight: 700; /* Условие 4.2 */
+  color: white; /* Условие 4.3 */
+  text-align: center; /* Условие 4.5 */
+  
+  /* Попробуй заменить padding на margin, если блок должен стоять ниже, 
+     либо оставь padding, если текст должен быть внутри блока с отступом */
+  padding-top: 32px; /* Условие 4.4 */
+}
