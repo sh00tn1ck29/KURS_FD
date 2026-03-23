@@ -1,5 +1,8 @@
+.list {
+  list-style-type: none;
+}
+
 li {
-  text-decoration: none;
   font-size: 1.5em;
 }
 
@@ -14,4 +17,3 @@ li:nth-child(2) {
 li:nth-child(1) {
   text-decoration: overline red;
 }
-
