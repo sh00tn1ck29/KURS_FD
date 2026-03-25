@@ -4,20 +4,26 @@
 
 body {
   background-color: bisque;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: monospace;
 }
 
 .login-form {
   background-color: aqua;
-  font-size: 16px;
-  font-family: monospace;
   width: 300px;
   padding: 16px;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
-  margin: calc(50% - 150px) auto;
 }
 
 .form-title {
   text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
 }
 
 .form-control {
@@ -25,11 +31,11 @@ body {
 }
 
 .form-label {
+  display: block;
   margin-bottom: 4px;
 }
 
-input:invalid,
-textarea:invalid {
+.form-input:invalid {
   border: 3px solid #ff0000;
 }
 
@@ -41,9 +47,11 @@ textarea:invalid {
   border: 1px solid #808080;
   padding: 4px;
   outline: none;
+  font-family: inherit;
 }
 
 .submit-button {
+  display: block;
   height: 32px;
   width: 100%;
   background-color: #ff7f50;
@@ -51,4 +59,8 @@ textarea:invalid {
   text-transform: uppercase;
   color: white;
   border-radius: 4px;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
 }
+
