@@ -20,11 +20,6 @@ select {
   display: inline-block;
 }
 
-/* 3. Специфические отступы для радиокнопок внутри блока */
 .languages input {
   margin-right: 4px;
-}
-
-.languages label {
-  margin-right: 8px;
 }
