@@ -6,6 +6,12 @@
   margin: 32px;
 }
 
+/* 1. Задаем отступ только для строк (div) */
+.big-form div {
+  margin: 8px;
+}
+
+/* 2. У инпутов и кнопок убираем margin, чтобы они не добавляли лишнего */
 input,
 textarea,
 button,
@@ -15,6 +21,11 @@ select {
   vertical-align: middle;
 }
 
-.big-form div {
-  margin: 8px;
+/* 3. Специфические отступы для радиокнопок внутри блока */
+.languages input {
+  margin-right: 4px; /* Отступ от кружка до текста */
+}
+
+.languages label {
+  margin-right: 8px; /* Расстояние между вариантами HTML, CSS */
 }
