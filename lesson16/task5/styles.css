@@ -18,7 +18,6 @@ button,
 select {
   margin: 0;
   display: inline-block;
-  vertical-align: middle;
 }
 
 /* 3. Специфические отступы для радиокнопок внутри блока */
