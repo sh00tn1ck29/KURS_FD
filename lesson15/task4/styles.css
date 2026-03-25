@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .image-button {
   text-align: center;
   width: 200px;
@@ -8,7 +12,7 @@
   font-weight: 700;
   filter: opacity(0.5);
   position: absolute;
-  top: calc(50% - 300px);
+  top: calc(50% - 350px);
   left: calc(50% - 100px);
 }
 
