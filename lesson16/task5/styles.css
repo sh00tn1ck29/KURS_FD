@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+.big-form {
+  margin: 32px;
+}
+
+input,
+textarea,
+button {
+  margin: 8px;
+  display: inline-block;
+}
