@@ -7,7 +7,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-items: center;
   font-family: monospace;
+  min-height: 100vh;
+  margin: 0;
 }
 
 .login-form {
@@ -32,8 +35,7 @@ body {
   margin-bottom: 4px;
 }
 
-input:invalid,
-textarea:invalid {
+.form-input:invalid {
   border: 3px solid #ff0000;
 }
 
@@ -45,6 +47,7 @@ textarea:invalid {
   border: 1px solid #808080;
   padding: 4px;
   outline: none;
+  font-family: inherit;
 }
 
 .submit-button {
@@ -55,5 +58,6 @@ textarea:invalid {
   text-transform: uppercase;
   color: white;
   border-radius: 4px;
+  font-family: inherit;
 }
 
