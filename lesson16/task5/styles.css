@@ -10,6 +10,11 @@ input,
 textarea,
 button,
 select {
-  margin: 8px;
+  margin: 0;
   display: inline-block;
+  vertical-align: middle;
+}
+
+.big-form div {
+  margin: 8px;
 }
