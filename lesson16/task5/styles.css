@@ -6,9 +6,22 @@
   margin: 32px;
 }
 
+/* Применяем отступ ко всем элементам ввода */
 input,
 textarea,
-button {
+select,
+button,
+.languages {
   margin: 8px;
   display: inline-block;
+  vertical-align: middle; /* Чтобы элементы разной высоты не прыгали */
+}
+
+/* Убираем лишние отступы внутри блока радиокнопок */
+.languages input {
+  margin: 0 4px 0 0;
+}
+
+.languages label {
+  margin-right: 8px;
 }
