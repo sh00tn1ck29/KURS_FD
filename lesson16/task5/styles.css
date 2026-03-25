@@ -9,7 +9,3 @@
 .big-form div {
   margin: 8px;
 }
-.languages input {
-  margin-right: 4px; /* Фиксированный отступ вместо пробела */
-}
-
