@@ -15,7 +15,7 @@
     <form class="big-form">
       <div><input type="text" name="primaryLanguage" value="HTML" disabled /></div>
       <div><input type="checkbox" name="agree" /></div>
-      <div><input type="checkbox" name="like" checked onclick="return false;"/></div>
+      <div><input type="checkbox" name="like" checked /></div>
       <div><input type="color" name="favouriteColor" value="#ff7f50" /></div>
       <div><input type="date" name="birthDate" value="2021-01-02" /></div>
       <div><input type="datetime-local" name="birthTime" value="2024-10-04T13:02" /></div>
@@ -28,9 +28,12 @@
       </div>
       <div><input type="password" name="password" value="secret" /></div>
       <div class="languages">
-        <label><input type="radio" name="language" value="html" /> HTML</label>
-        <label><input type="radio" name="language" value="css" checked /> CSS</label>
-        <label><input type="radio" name="language" value="javascript" /> JavaScript</label>
+        <input name="language" value="html" type="radio" id="html" />
+        <label for="html">HTML</label>
+        <input name="language" value="css" type="radio" checked id="css" />
+        <label for="css">CSS</label>
+        <input name="language" value="javascript" type="radio" id="javascript" />
+        <label for="javascript">JavaScript</label>
       </div>
       <div><input type="range" name="learningProgress" value="30" /></div>
       <div>
