@@ -1,19 +1,25 @@
-.custom-button1 {
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon-1 {
   font-size: 16px;
 }
 
-.custom-button2 {
+.icon-2 {
   font-size: 32px;
 }
 
-.custom-button3 {
+.icon-3 {
   font-size: 64px;
 }
 
-.custom-button4 {
+.icon-4 {
   font-size: 128px;
 }
 
-.custom-button5 {
+.icon-5 {
   font-size: 256px;
 }
