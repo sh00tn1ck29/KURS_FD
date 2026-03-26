@@ -5,14 +5,14 @@
 .container {
   display: flex;
   height: 100vh;
+  width: 100vw;
 }
 
 .spinner {
   margin: auto;
-  font-family: monospace;
-  font-size: 16px;
-  text-transform: uppercase;
-  animation: blinking 2s linear infinite;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
 }
 
 .circle {
@@ -25,29 +25,28 @@
   animation: circle-animation 2s linear infinite;
 }
 
+.spinner-text {
+ 
+  font-family: monospace;
+  font-size: 16px;
+  text-transform: uppercase;
+  animation: blinking 2s linear infinite;
+}
+
 @keyframes blinking {
-  0% {
+  0%, 100% {
     opacity: 0;
   }
   50% {
     opacity: 1;
   }
-  100% {
-    opacity: 0;
-  }
 }
 
 @keyframes circle-animation {
-  0% {
-    transform: rotate(90deg);
+  from {
+    transform: rotate(0deg);
   }
-  25% {
-    transform: rotate(180deg);
-  }
-  50% {
-    transform: rotate(270deg);
-  }
-  100% {
+  to {
     transform: rotate(360deg);
   }
 }
