@@ -8,18 +8,16 @@ body {
   margin: 0;
 }
 
-html {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #555;
-  font-size: 16px;
-}
-
 body {
   display: flex;
   flex-direction: column;
 }
 
-/* HEADER */
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #555;
+  font-size: 16px;
+}
 
 .header {
   background-image: linear-gradient(60deg, red, orange);
@@ -30,24 +28,17 @@ h1 {
   color: white;
 }
 
-/* MAIN LAYOUT */
-
 .main {
   flex: 1 0 auto;
   display: flex;
-  flex-wrap: wrap; /* важно для адаптива */
 }
-
-/* FOOTER */
 
 .footer {
   background-color: #e5e5e5;
   padding: 0.5em;
-  text-align: center;
   flex: 0 0 auto;
+  text-align: center;
 }
-
-/* COLUMNS */
 
 .navigation,
 .section,
@@ -56,19 +47,17 @@ h1 {
 }
 
 .navigation {
-  flex: 0 0 20%;
+  width: 20%;
 }
 
 .section {
-  flex: 0 0 60%;
+  width: 60%;
   font-size: 1.25em;
 }
 
 .news {
-  flex: 0 0 20%;
+  width: 20%;
 }
-
-/* CONTENT */
 
 .units-list {
   line-height: 1.75em;
@@ -86,10 +75,8 @@ h1 {
   text-align: center;
 }
 
-/* NAVIGATION */
-
 .nav-list {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
@@ -104,10 +91,8 @@ h1 {
   display: block;
   width: 100%;
   padding: 0 0.5em;
-  color: white;
   text-decoration: none;
-
-  /* для троеточия */
+  color: white;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
