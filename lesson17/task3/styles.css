@@ -1,1 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+table {
+  margin: 16px;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+td {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+tr:nth-child(even):not(:last-child) td:nth-child(2n + 3):not(:last-child) {
+  background-color: black;
+}
+
+tr:nth-child(2n + 3):not(:last-child) td:nth-child(even):not(:last-child) {
+  background-color: black;
+}
+
+tr:first-child td,
+tr:last-child td {
+  border: none;
+}
+
+tr td:first-child,
+tr td:last-child {
+  border: none;
+}
 
