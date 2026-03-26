@@ -2,8 +2,13 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 .content {
-  min-height: 100vh;
+  height: 100%;
   display: flex;
 }
 
@@ -11,22 +16,24 @@
   width: 80%;
   background-color: #fa5;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .ideas {
   width: 20%;
   background-color: #5af;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image {
-  margin: auto;
   max-width: 100%;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .idea {
-  margin: auto;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
@@ -34,4 +41,7 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  display: block;
+  max-width: 100%;
+  text-align: center;
 }
