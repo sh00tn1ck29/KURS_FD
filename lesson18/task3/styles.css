@@ -23,3 +23,8 @@
 .icon-5 {
   font-size: 256px;
 }
+
+button {
+  background-color: transparent;
+  border: none;
+}
