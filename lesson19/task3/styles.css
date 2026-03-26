@@ -6,19 +6,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Используем vh для центровки по высоте */
-  width: 100vw;  /* Для центровки по всей ширине */
+  height: 100vh;
+  width: 100vw;
 }
 
 .spinner {
-  text-align: center; /* Чтобы квадратик был под текстом по центру */
+  text-align: center;
 }
 
 .spinner-text {
   font-family: monospace;
   font-size: 16px;
   text-transform: uppercase;
-  /* Пункт 3: Анимация только для текста */
   animation: blinking 2s linear infinite;
 }
 
@@ -27,11 +26,10 @@
   width: 10px;
   height: 4px;
   border-radius: 2px;
-  margin: 0 auto; /* Центрируем квадратик относительно текста */
-  position: relative; /* Чтобы работал 'left' в анимации moving */
-  
-  /* Пункт 5: Две анимации через запятую + alternate для движения назад */
-  animation: 
-    moving 2s linear infinite alternate, 
+  margin: 0 auto;
+  position: relative;
+
+  animation:
+    moving 2s linear infinite alternate,
     blinking 2s linear infinite;
 }
