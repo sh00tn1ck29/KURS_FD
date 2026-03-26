@@ -20,13 +20,12 @@ html {
 }
 
 .header {
-  color: white;
   background-image: linear-gradient(60deg, red, orange);
   text-align: center;
 }
 
 h1 {
-  margin: 0;
+  color: white;
 }
 
 .main {
