@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+.text {
+}
+
+.navigation {
+  background-color: #ff7f50;
+  height: 200px;
+  display: flex;
+}
+
+.Products-list {
+  background-color: #006400;
+  height: 200px;
+  display: flex;
+}
+
+.News {
+  background-color: #0ff;
+  height: 200px;
+  display: flex;
+}
+
+span {
+  margin: 8px;
+  text-transform: lowercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #faebd7;
+  border-radius: 4px;
+  margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .container2 {
+    display: flex;
+  }
+  .navigation {
+    flex-grow: 1;
+  }
+  .Products-list {
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    display: flex;
+  }
+  .News {
+    flex-grow: 1;
+  }
+  .container2 {
+    flex-grow: 2;
+  }
+}
