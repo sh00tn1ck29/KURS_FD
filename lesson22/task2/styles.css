@@ -38,9 +38,11 @@ span {
   }
   .navigation {
     flex-grow: 1;
+    flex-shrink: 1;
   }
   .Products-list {
     flex-grow: 1;
+    flex-shrink: 1;
   }
 }
 
@@ -50,8 +52,10 @@ span {
   }
   .News {
     flex-grow: 1;
+    flex-shrink: 1;
   }
   .container2 {
     flex-grow: 2;
+    flex-shrink: 2;
   }
 }
