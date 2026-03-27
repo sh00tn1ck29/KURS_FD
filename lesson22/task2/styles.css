@@ -34,11 +34,9 @@ span {
     display: flex;
   }
   .navigation {
-    flex-grow: 1;
     flex-shrink: 1;
   }
   .Products-list {
-    flex-grow: 1;
     flex-shrink: 1;
   }
 }
