@@ -34,10 +34,10 @@ span {
     display: flex;
   }
   .navigation {
-    flex-shrink: 1;
+    flex-grow: 1;
   }
   .Products-list {
-    flex-shrink: 1;
+    flex-grow: 1;
   }
 }
 
