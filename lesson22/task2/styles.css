@@ -30,6 +30,7 @@ span {
   background-color: #faebd7;
   border-radius: 4px;
   margin: auto;
+  padding: 4px;
 }
 
 @media screen and (min-width: 600px) {
