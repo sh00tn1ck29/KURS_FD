@@ -2,55 +2,57 @@
   box-sizing: border-box;
 }
 
-.navigation {
-  background-color: #ff7f50;
+/* Общие стили для блоков */
+.navigation, .Products-list, .News {
   height: 200px;
   display: flex;
+  align-items: center; /* Центрирование текста по вертикали */
+  justify-content: center; /* Центрирование текста по горизонтали */
 }
 
-.Products-list {
-  background-color: #006400;
-  height: 200px;
-  display: flex;
-}
-
-.News {
-  background-color: #0ff;
-  height: 200px;
-  display: flex;
-}
+.navigation { background-color: #ff7f50; }
+.Products-list { background-color: #006400; }
+.News { background-color: #0ff; }
 
 span {
   text-transform: lowercase;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #faebd7;
   border-radius: 4px;
-  margin: auto;
   padding: 8px;
 }
 
+/* 1. До 600px: блоки идут друг под другом по умолчанию (поведение div) */
+
+/* 2. От 600px до 899px: Navigation и Products пополам, News снизу */
 @media screen and (min-width: 600px) {
   .container2 {
     display: flex;
   }
-  .navigation {
-    flex-grow: 1;
-  }
-  .Products-list {
-    flex-grow: 1;
+  .navigation, .Products-list {
+    flex: 1 1 0; /* Делят контейнер ровно пополам */
   }
 }
 
+/* 3. От 900px: Все три блока в одну линию, по 1/3 каждый */
 @media screen and (min-width: 900px) {
   .container {
     display: flex;
   }
-  .News {
-    flex-grow: 1;
-    flex-shrink: 1;
-  }
+  
+  /* container2 содержит 2 блока, News — 1 блок. 
+     Чтобы News был 1/3, а container2 был 2/3 (в котором лежат два по 1/3), 
+     используем пропорцию 2 к 1 */
   .container2 {
-    flex-grow: 2;
-    flex-shrink: 2;
+    flex: 2 1 0; 
+  }
+  
+  .News {
+    flex: 1 1 0;
+  }
+
+  /* Внутри container2 блоки по-прежнему должны делиться поровну */
+  .navigation, .Products-list {
+    flex: 1 1 0;
   }
 }
