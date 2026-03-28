@@ -36,6 +36,9 @@ button {
   display: flex;
 }
 
+.nav-list {
+  padding: 0;
+}
 .navigation {
   width: 20%;
   padding: 0.5em;
