@@ -153,7 +153,7 @@ img {
   }
 
   .navigation {
-    width: 20%;
+    flex: 0 0 20vw;
   }
 
   .section2 {
@@ -161,7 +161,7 @@ img {
   }
 
   .section {
-    flex-basis: 0 0 60%;
+    flex-basis: 0 0 60vw;
   }
 
   .news {
