@@ -12,6 +12,7 @@
   align-items: center;
   cursor: pointer;
   color: #fff;
+  padding: 0;
 }
 .menu__item {
   list-style-type: none;
