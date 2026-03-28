@@ -1,0 +1,63 @@
+@import 'layout.scss';
+* {
+  box-sizing: border-box;
+}
+
+.navigation,
+.Products-list,
+.News {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation {
+  background-color: #ff7f50;
+}
+
+.Products-list {
+  background-color: #006400;
+}
+
+.News {
+  background-color: #0ff;
+  @include medium-media {
+    flex: 1 1 0;
+  }
+}
+
+span {
+  text-transform: lowercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #faebd7;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.container2 {
+  @include small-media {
+    display: flex;
+  }
+
+  @include medium-media {
+    flex: 2 1 0;
+  }
+}
+
+.navigation,
+.Products-list {
+  @include small-media {
+    flex: 1 1 0;
+  }
+
+  @include medium-media {
+    flex: 1 1 0;
+  }
+}
+
+.container {
+  @include medium-media {
+    display: flex;
+  }
+}
