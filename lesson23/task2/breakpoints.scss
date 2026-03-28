@@ -1,0 +1,39 @@
+$small-media: 600px;
+$medium-media: 900px;
+$large-media: 1200px;
+
+@mixin extra-small {
+  @media screen and (max-width: calc(#{$small-media} - 1px)) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (min-width: $small-media) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: $medium-media) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (min-width: $large-media) {
+    @content;
+  }
+}
+
+@mixin landscape_mixin {
+  @media screen and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin portrait_mixin {
+  @media screen and (orientation: portrait) {
+    @content;
+  }
+}
