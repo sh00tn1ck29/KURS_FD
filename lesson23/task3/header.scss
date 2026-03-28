@@ -12,30 +12,26 @@
   align-items: center;
   cursor: pointer;
   color: #fff;
-
-  &__item {
-    list-style-type: none;
-    padding-inline: 8px;
-    height: 3em;
-    display: flex;
-
-    &-text {
-      margin: auto;
-    }
-
-    &:hover {
-      background-color: #9acd32;
-    }
-
-    &_active {
-      color: yellow;
-      position: relative;
-
-      &:hover > .submenu {
-        display: block;
-      }
-    }
-  }
+  padding: 0;
+}
+.menu__item {
+  list-style-type: none;
+  padding-inline: 8px;
+  height: 3em;
+  display: flex;
+}
+.menu__item-text {
+  margin: auto;
+}
+.menu__item:hover {
+  background-color: #9acd32;
+}
+.menu__item_active {
+  color: yellow;
+  position: relative;
+}
+.menu__item_active:hover > .submenu {
+  display: block;
 }
 
 .submenu {
@@ -50,18 +46,27 @@
   position: absolute;
   top: 48px;
   display: none;
-
-  &__item {
-    list-style-type: none;
-    padding-inline: 8px;
-    height: 3em;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &:hover {
-      color: black;
-    }
-  }
 }
+.submenu__item {
+  list-style-type: none;
+  padding-inline: 8px;
+  height: 3em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.submenu__item:hover {
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=styles.css.map */
