@@ -12,26 +12,30 @@
   align-items: center;
   cursor: pointer;
   color: #fff;
-  padding: 0;
-}
-.menu__item {
-  list-style-type: none;
-  padding-inline: 8px;
-  height: 3em;
-  display: flex;
-}
-.menu__item-text {
-  margin: auto;
-}
-.menu__item:hover {
-  background-color: #9acd32;
-}
-.menu__item_active {
-  color: yellow;
-  position: relative;
-}
-.menu__item_active:hover > .submenu {
-  display: block;
+
+  &__item {
+    list-style-type: none;
+    padding-inline: 8px;
+    height: 3em;
+    display: flex;
+
+    &-text {
+      margin: auto;
+    }
+
+    &:hover {
+      background-color: #9acd32;
+    }
+
+    &_active {
+      color: yellow;
+      position: relative;
+
+      &:hover > .submenu {
+        display: block;
+      }
+    }
+  }
 }
 
 .submenu {
@@ -45,26 +49,18 @@
   padding-inline: 8px;
   position: absolute;
   top: 48px;
-}
-.submenu__item {
-  list-style-type: none;
-  padding-inline: 8px;
-  height: 3em;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.submenu__item:hover {
-  color: black;
-}
+  display: none;
 
-* {
-  box-sizing: border-box;
-}
+  &__item {
+    list-style-type: none;
+    padding-inline: 8px;
+    height: 3em;
+    width: 100%;
+    display: flex;
+    align-items: center;
 
-html {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
+    &:hover {
+      color: black;
+    }
+  }
 }
-
-/*# sourceMappingURL=styles.css.map */
